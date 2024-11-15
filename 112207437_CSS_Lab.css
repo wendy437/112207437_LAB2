@@ -1,0 +1,121 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    list-style: none;
+    padding: 0.5em 0;
+}
+
+.navbar li {
+    position: relative;
+}
+
+/* Default link styling */
+.navbar a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+}
+
+/* Services dropdown toggle styling */
+.dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    font-size: 0.8em;
+    display: none; /* Hidden by default */
+}
+
+/* Show dropdown menu and icon on checkbox checked */
+#services-toggle:checked + .dropdown-toggle {
+    color: #3498db; /* Turn blue when checked */
+}
+
+#services-toggle:checked + .dropdown-toggle .dropdown-icon {
+    display: inline; /* Show triangle icon */
+}
+
+#services-toggle:checked ~ .dropdown-content {
+    display: block; /* Show dropdown content when checked */
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    list-style: none; /* Remove bullet points for each item */
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: white;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Link styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
